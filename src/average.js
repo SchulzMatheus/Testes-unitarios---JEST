@@ -22,7 +22,9 @@ return undefined;
 soma += array[i]; 
 }
 averageResults = Number((soma / arrayTamanho).toFixed(0));
-
+if (Number.isNaN(averageResults) === true) {
+  return undefined;
+}
 return averageResults;
 };
 

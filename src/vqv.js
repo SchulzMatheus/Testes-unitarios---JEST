@@ -19,7 +19,10 @@
 */
 
 const vqv = (string, number) => {
-  let phrase = `Oi, meu nome é ${string}!\ntenho ${number} anos,\ntrabalho na Trybe `;
+  if (string === undefined || number === undefined) {
+    return undefined;
+  }
+  let phrase = `Oi, meu nome é ${string}!\nTenho ${number} anos,\ntrabalho na Trybe e`;
   phrase += ' mando muito em programação!\n#VQV!';
   return phrase;
 };

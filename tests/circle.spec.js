@@ -26,7 +26,7 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     
     // ESCREVA SEUS TESTES ABAIXO:
     // Teste se circle retorna undefined, caso o parâmetro passado não seja um número.
-    expect(circle(String)).toBeUndefined;
+    expect(circle(NaN)).toBeUndefined;
     // Teste se circle retorna um objeto.
     expect(typeof circle(Math.random())).toBe('object');
     // Teste se o objeto retornado possui 3 propriedades.

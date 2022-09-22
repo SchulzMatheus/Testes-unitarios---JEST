@@ -39,7 +39,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     const x = productDetails('a', 'b');
     expect(Array.isArray(x)).toBe(true);
     // Teste se o array retornado pela função contém dois itens dentro.
-    // expect(Object.keys(x)).toHaveLength(2);
+    expect(Object.keys(x)).toHaveLength(2);
     // Teste se os dois itens dentro do array retornado pela função são objetos.
     for (let i = 0; i < x.length; i += 1) {
       if(typeof x[i] !== 'object') {fail('not a object');} else {expect(typeof x[i]).toBe('object');}
